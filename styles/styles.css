@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+body, h1, h2, h3, h4, h5, h6, p, a, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.6);
+  font-family: Calibri;
+}
+
+body main .main_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10%;
+}
+
+body main .main_info .learn_to_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 4%;
+  color: #ffffff;
+  max-width: 500px;
+  padding: 10px;
+}
+
+body main .main_info .learn_to_code h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 5%;
+}
+
+body main .main_info .learn_to_code p {
+  font-size: 1.25rem;
+}
+
+body main .main_info .ads_info {
+  max-width: 500px;
+  padding: 10px;
+}
+
+body main .main_info .ads_info div.promotion {
+  padding: 20px;
+  background-color: #5d54a3;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+body main .main_info .ads_info div.personal_info form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 20px 50px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+body main .main_info .ads_info div.personal_info form input {
+  padding: 15px;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+body main .main_info .ads_info div.personal_info form input::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+body main .main_info .ads_info div.personal_info form input:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+body main .main_info .ads_info div.personal_info form input::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+body main .main_info .ads_info div.personal_info form input::placeholder {
+  font-weight: bold;
+}
+
+body main .main_info .ads_info div.personal_info form input:focus {
+  outline: none;
+  border: 2px solid rgba(255, 0, 0, 0.6);
+}
+
+body main .main_info .ads_info div.personal_info form button {
+  padding: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #37cc8a;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+body main .main_info .ads_info div.personal_info form button:hover {
+  background-color: #77e2b4;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: 2px 2px 15px #616060;
+}
+
+body main .main_info .ads_info div.personal_info form div.agreement_info {
+  text-align: center;
+}
+
+body main .main_info .ads_info div.personal_info form div.agreement_info p.agree_terms {
+  color: #999999;
+}
+
+body main .main_info .ads_info div.personal_info form div.agreement_info p.agree_terms a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.6);
+}
+
+body main .main_info .ads_info div.personal_info form div.agreement_info .bold {
+  color: #dc8278;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    color: white;
+  }
+  body .main_info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .main_info .learn_to_code {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 7%;
+  }
+  body .main_info .ads_info {
+    margin-bottom: 7%;
+  }
+  body .main_info .ads_info div.personal_info form {
+    padding-bottom: 30px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

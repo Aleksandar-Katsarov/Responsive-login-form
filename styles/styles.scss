@@ -1,0 +1,160 @@
+body, h1, h2, h3, h4, h5, h6, p, a, input, button{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-image: url('../images/bg-intro-desktop.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.6);
+    
+
+    @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+    //font-family: 'Paytone One', sans-serif;
+
+    font-family: Calibri;
+
+    main {
+        //this is for my main section styles
+
+        .main_info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+
+           .learn_to_code {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 4%;
+            color: #ffffff;
+            max-width: 500px;
+            padding: 10px;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1;
+                margin-bottom: 5%;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+           }
+            
+           .ads_info {
+            //this is for my main section styles
+            max-width: 500px;
+            padding: 10px;
+
+
+            div.promotion{
+                padding: 20px;
+                background-color: rgb(93, 84, 163);
+                text-align: center;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                color: #ffffff;
+                box-shadow: 0 8px  0 rgba(0, 0, 0, 0.2);
+            }
+
+           div.personal_info form {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 20px 50px 20px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+                input {
+                    padding: 15px;
+                    padding-left: 25px;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(153, 153, 153);
+                    border-radius: 5px; 
+
+                    &::placeholder{
+                        font-weight: bold;
+                    }
+                    &:focus{
+                        outline: none;
+                        border: 2px solid rgba(255, 0, 0, 0.6);
+                    } 
+                }
+
+                button{
+                    padding: 15px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: rgb(55, 204, 138);
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 0 3px  0 rgba(0, 0, 0, 0.2);
+
+                    &:hover {
+                        background-color: rgb(93, 182, 143);
+                        cursor: pointer;
+                        box-shadow: none;
+                        text-shadow: 2px 2px 15px #616060;
+                    }
+                }
+                div.agreement_info {
+                    text-align: center;
+                p.agree_terms {
+                    color: rgb(153, 153, 153);
+                    
+                   a {
+                       text-decoration: none;
+                       color: rgba(255, 0, 0, 0.6);
+                   }
+                }
+
+                .bold {
+                    color: rgb(220, 130, 120);
+                     }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px){
+
+    main{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    body {
+      color: white;
+    
+      .main_info{
+          flex-wrap: wrap;
+
+          .learn_to_code{
+              justify-content: center;
+              text-align: center;
+              margin-right: 0;
+              margin-bottom: 7%;
+          }
+
+          .ads_info{
+              margin-bottom: 7%;
+
+              div.personal_info form {
+                  padding-bottom: 30px !important;
+              }
+          }
+      }
+    }
+}
